@@ -1,3 +1,6 @@
+## Name : HARIHARAN A
+## Reg no: 212223110013
+
 # Led-control-using-Arduino
 
 ## AIM
@@ -58,9 +61,37 @@ Emergency Signaling System </br>
 Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
+<img width="1068" height="825" alt="exp1ledd" src="https://github.com/user-attachments/assets/23a1639e-2566-4621-a1b0-ef6e78d9392f" />
 
 ## PROGRAM
+```
+bool button_status;
+
+void setup() {
+  pinMode(10,OUTPUT);
+  pinMode(5,INPUT);
+}
+
+void loop() {
+  button_status=digitalRead(5);
+  if (button_status== HIGH)
+  {
+    digitalWrite(10,HIGH);
+    delay(1000);
+    digitalWrite(10,LOW);
+    delay(3000);
+  }
+  else
+  digitalWrite(13,LOW);
+}
+```
 
 ## OUTPUT
+### LED BLINK OFF
+<img width="1920" height="1080" alt="Screenshot 2026-04-27 142438" src="https://github.com/user-attachments/assets/63de5336-c16a-4ed1-91f3-f074cefde64b" />
+
+### LED BLINK ON
+<img width="1920" height="1020" alt="Screenshot 2026-04-27 142310" src="https://github.com/user-attachments/assets/5c7b92f8-3993-4690-a26b-cc5792fe10ee" />
+
 
 ## RESULT
