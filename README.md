@@ -68,7 +68,7 @@ Weighing Machines </br>
 bool button_status;
 
 void setup() {
-  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
   pinMode(5,INPUT);
 }
 
