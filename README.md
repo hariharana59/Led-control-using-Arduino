@@ -82,7 +82,7 @@ void loop() {
     delay(3000);
   }
   else
-  digitalWrite(13,LOW);
+  digitalWrite(12,LOW);
 }
 ```
 
